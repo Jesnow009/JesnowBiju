@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jesnow Portfolio - Professional Video Editor Portfolio. Cinematic Storytelling, Motion Graphics, and Color Grading.">
+    <title>JESNOW PORTFOLIO | Professional Video Editor Portfolio</title>
+    
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https:; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; media-src 'self' https:; connect-src 'self' https:; frame-src 'self' https://livid.com https://*.livid.com https://player.vimeo.com https://*.vimeo.com https://www.youtube.com https://youtube.com https://*.youtube.com;">
+
+    <!-- Network Preconnect Optimizations -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://unpkg.com">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    
+    <!-- Vanilla CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+    <!-- Background Grid and Overlay Effects -->
+    <div class="bg-grid"></div>
+    <div class="noise-overlay"></div>
+
+    <!-- Header & Navigation -->
+    <header class="navbar">
+        <a href="#" class="logo text-hover-trigger">
+            <span>Jesnow</span><span class="logo-dot">.</span><span>Portfolio</span>
+        </a>
+        <nav class="nav-menu">
+            <a href="#about" class="nav-link text-hover-trigger">About</a>
+            <a href="#skills" class="nav-link text-hover-trigger">Skills</a>
+            <a href="#work" class="nav-link text-hover-trigger">Work</a>
+            <a href="#contact" class="nav-link text-hover-trigger">Contact</a>
+        </nav>
+        <div class="nav-cta">
+            <a href="#contact" class="btn btn-nav text-hover-trigger">LET'S TALK</a>
+        </div>
+        <button class="mobile-menu-toggle text-hover-trigger" aria-label="Toggle Menu">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-drawer">
+        <nav class="drawer-nav">
+            <a href="#about" class="drawer-link">About</a>
+            <a href="#skills" class="drawer-link">Skills</a>
+            <a href="#work" class="drawer-link">Work</a>
+            <a href="#contact" class="drawer-link">Contact</a>
+            <a href="#contact" class="btn btn-drawer mt-4">LET'S COLLABORATE</a>
+        </nav>
+    </div>
+
+    <main>
+        <!-- Hero Section with 3D Three.js Interactive Canvas -->
+        <section class="hero-section" id="hero">
+            <div id="canvas-container"></div>
+            <div class="hero-content container">
+                <div class="hero-grid">
+                    <div class="hero-text-col">
+                        <div class="hero-tagline animate-on-load">SCULPTING TIME & MOTION</div>
+                        <h1 class="hero-title animate-on-load delay-1">
+                            CRAFTING<br>
+                            CINEMATIC<br>
+                            STORIES WITH<br>
+                            <span>JESNOW BIJU</span>
+                        </h1>
+                        <p class="hero-subtitle animate-on-load delay-2">
+                            High-end video editing, motion design, and color grading for commercial, narrative, and music video projects.
+                        </p>
+                        <div class="hero-actions animate-on-load delay-3">
+                            <a href="#work" class="btn btn-primary text-hover-trigger">EXPLORE PORTFOLIO</a>
+                            <a href="#contact" class="btn btn-secondary text-hover-trigger">START A PROJECT</a>
+                        </div>
+                    </div>
+
+                    <div class="hero-portrait-col animate-on-load delay-2">
+                        <div class="hero-portrait-wrapper">
+                            <!-- Ambient Cinematic Rim-Light Halo -->
+                            <div class="hero-portrait-glow"></div>
+
+                            <!-- Director Viewfinder Architectural HUD Frame -->
+                            <div class="hero-hud-frame">
+                                <span class="hud-corner top-left"></span>
+                                <span class="hud-corner top-right"></span>
+                                <span class="hud-corner bottom-left"></span>
+                                <span class="hud-corner bottom-right"></span>
+                                <div class="hud-tag top-left-tag">
+                                    <span class="hud-rec-dot"></span> REC [00:00:24:18]
+                                </div>
+                                <div class="hud-tag top-right-tag">4K RAW • 24FPS</div>
+                            </div>
+
+                            <!-- Transparent Blended Portrait -->
+                            <img src="assets/jesnow_profile.png" alt="Jesnow Biju - Video Editor & Colorist" class="hero-portrait-img">
+
+                            <!-- Floating Editorial Glass Status Badge -->
+                            <div class="hero-badge-pill">
+                                <span class="hero-badge-dot"></span>
+                                <div class="hero-badge-text-group">
+                                    <span class="hero-badge-name">JESNOW BIJU</span>
+                                    <span class="hero-badge-role">VIDEO EDITOR &bull; COLORIST</span>
+                                </div>
+                                <span class="hero-badge-status">AVAILABLE</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <a href="#about" class="scroll-indicator text-hover-trigger">
+                <span>SCROLL DOWN</span>
+                <div class="scroll-mouse">
+                    <div class="scroll-wheel"></div>
+                </div>
+            </a>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats-section">
+            <div class="container grid grid-4">
+                <div class="stat-card">
+                    <div class="stat-num" data-val="3" data-suffix="+">0</div>
+                    <div class="stat-label">Years of Experience</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-num" data-val="50" data-suffix="+">0</div>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-num" data-val="50" data-suffix="K+">0</div>
+                    <div class="stat-label">Video Views</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-num" data-val="20" data-suffix="+">0</div>
+                    <div class="stat-label">Clients</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About section & Workflow details -->
+        <section class="about-section" id="about">
+            <div class="container grid grid-2">
+                <div class="about-visual">
+                    <div class="about-image-wrapper">
+                        <!-- Custom CSS abstract 3D visual or design element -->
+                        <div class="rotating-3d-box">
+                            <div class="face front">EDIT</div>
+                            <div class="face back">SOUND</div>
+                            <div class="face right">COLOR</div>
+                            <div class="face left">MOTION</div>
+                            <div class="face top">CUT</div>
+                            <div class="face bottom">FLOW</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <span class="sub-heading">BIOGRAPHY</span>
+                    <h2 class="section-title text-left">Cuts that Impact. Stories that Stuck.</h2>
+                    <p class="paragraph">
+                        I’m a 3rd year BSc Visual Communication student at St. Aloysius University with a passion for video editing and visual storytelling.
+                    </p>
+                    <p class="paragraph">
+                        I specialize in film cuts, reels, and post-production, focusing on clean edits, smooth transitions, and cinematic impact.
+                    </p>
+                    <p class="paragraph">
+                        Alongside video, I also work in graphic design, combining creativity and aesthetics to deliver engaging and meaningful visuals.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills & Software Stack Section -->
+        <section class="skills-section" id="skills">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">SKILLS & TOOLSET</h2>
+                    <p class="section-subtitle">The software, methods, and specialized workflows that power my editorial process.</p>
+                </div>
+                
+                <div class="grid grid-2">
+                    <!-- Methods/Capabilities -->
+                    <div class="capabilities-column">
+                        <div class="cap-item">
+                            <div class="cap-header">
+                                <span class="cap-number">01</span>
+                                <h3 class="cap-title">THE PSYCHOLOGY OF THE CUT</h3>
+                            </div>
+                            <p class="cap-desc">Prioritizing emotional truth and rhythm above all else. Every edit is a deliberate choice to advance the narrative, build psychological tension, and invisibly guide the viewer’s eye through the frame.</p>
+                        </div>
+                        
+                        <div class="cap-item">
+                            <div class="cap-header">
+                                <span class="cap-number">02</span>
+                                <h3 class="cap-title">NARRATIVE ARCHITECTURE & PACING</h3>
+                            </div>
+                            <p class="cap-desc">Structuring raw footage into a cohesive, compelling journey. Focusing on character arcs, spatial continuity, and temporal manipulation to ensure the emotional stakes dictate the rhythm of the film.</p>
+                        </div>
+                        
+                        <div class="cap-item">
+                            <div class="cap-header">
+                                <span class="cap-number">03</span>
+                                <h3 class="cap-title">STORY-DRIVEN LOOK DEVELOPMENT</h3>
+                            </div>
+                            <p class="cap-desc">Utilizing color grading and compositing strictly in service of the narrative. Establishing mood and highlighting thematic subtext through intentional color theory and lighting principles to elevate the frame.</p>
+                        </div>
+
+                        <div class="cap-item">
+                            <div class="cap-header">
+                                <span class="cap-number">04</span>
+                                <h3 class="cap-title">AURAL STORYTELLING & SOUNDSCAPING</h3>
+                            </div>
+                            <p class="cap-desc">Treating audio as a vital narrative device. Layering atmospheric soundscapes, precise dialogue pacing, and rhythmic sound design to anchor the viewer in the world and amplify the emotional impact of every scene.</p>
+                        </div>
+                    </div>
+
+                    <!-- Software Stack Grid -->
+                    <div class="software-column">
+                        <h3 class="column-title">SOFTWARE CORES</h3>
+                        <div class="software-grid">
+                            <div class="software-card text-hover-trigger">
+                                <div class="software-icon-wrapper">Pr</div>
+                                <div class="software-meta">
+                                    <div class="software-name">Adobe Premiere Pro</div>
+                                    <div class="software-stat">Master</div>
+                                </div>
+                                <div class="software-progress-bg">
+                                    <div class="software-progress-bar" style="width: 95%"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="software-card text-hover-trigger">
+                                <div class="software-icon-wrapper">Ps</div>
+                                <div class="software-meta">
+                                    <div class="software-name">Photoshop</div>
+                                    <div class="software-stat">Intermediate</div>
+                                </div>
+                                <div class="software-progress-bg">
+                                    <div class="software-progress-bar" style="width: 80%"></div>
+                                </div>
+                            </div>
+
+                            <div class="software-card text-hover-trigger">
+                                <div class="software-icon-wrapper">Cn</div>
+                                <div class="software-meta">
+                                    <div class="software-name">Canva</div>
+                                    <div class="software-stat">Master</div>
+                                </div>
+                                <div class="software-progress-bg">
+                                    <div class="software-progress-bar" style="width: 95%"></div>
+                                </div>
+                            </div>
+
+                            <div class="software-card text-hover-trigger">
+                                <div class="software-icon-wrapper">Ae</div>
+                                <div class="software-meta">
+                                    <div class="software-name">Adobe After Effects</div>
+                                    <div class="software-stat">Good</div>
+                                </div>
+                                <div class="software-progress-bg">
+                                    <div class="software-progress-bar" style="width: 75%"></div>
+                                </div>
+                            </div>
+
+                            <div class="software-card text-hover-trigger">
+                                <div class="software-icon-wrapper">Dr</div>
+                                <div class="software-meta">
+                                    <div class="software-name">DaVinci Resolve</div>
+                                    <div class="software-stat">great colourist</div>
+                                </div>
+                                <div class="software-progress-bg">
+                                    <div class="software-progress-bar" style="width: 90%"></div>
+                                </div>
+                            </div>
+
+                            <div class="software-card text-hover-trigger">
+                                <div class="software-icon-wrapper">Cc</div>
+                                <div class="software-meta">
+                                    <div class="software-name">CapCut</div>
+                                    <div class="software-stat">Advanced</div>
+                                </div>
+                                <div class="software-progress-bg">
+                                    <div class="software-progress-bar" style="width: 90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="experience-badge mt-4">
+                            <span class="badge-title">POST-PRODUCTION STANDARD</span>
+                            <p class="badge-text">Every edit is a deliberate psychological choice to advance your narrative, backed by a rigorous post-production pipeline.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Showcase Gallery -->
+        <section class="work-section" id="work">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">FEATURED / WORKS</h2>
+                    <p class="section-subtitle">A curated selection of video editing, visual effects, and color grading projects.</p>
+                </div>
+
+                <!-- Video Showcase Grid (Widescreen Film Cuts) -->
+                <div class="gallery-grid" id="gallery-grid">
+                    <!-- Project Card 1: Film Cuts Showcase -->
+                    <div class="project-card tilt-card" data-category="film-cuts" data-video="https://youtu.be/RAO0_nqH4wc" data-title="Marco Film Mashup" data-client="Director's Cut" data-role="Lead Video Editor">
+                        <div class="project-media">
+                            <video class="card-video" poster="assets/marco_thumb.png" data-preview="https://assets.mixkit.co/videos/preview/mixkit-cyberpunk-city-street-with-neon-lights-and-rain-41793-large.mp4" loop muted playsinline preload="none"></video>
+                            <div class="card-overlay"></div>
+                            <div class="play-indicator">
+                                <i data-lucide="play"></i>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">FILM CUT</span>
+                            <h3 class="project-title">Marco Film Mashup</h3>
+                            <p class="project-client">Director's Cut</p>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 2: Film Cuts Showcase -->
+                    <div class="project-card tilt-card" data-category="film-cuts" data-video="https://livid.com/watch/oCrXeVA0CKNv" data-title="Monkey Man Film Mashup" data-client="Action Editorial" data-role="Lead Video Editor">
+                        <div class="project-media">
+                            <video class="card-video" poster="assets/monkeyman_thumb.png" data-preview="https://assets.mixkit.co/videos/preview/mixkit-mysterious-forest-foggy-path-41857-large.mp4" loop muted playsinline preload="none"></video>
+                            <div class="card-overlay"></div>
+                            <div class="play-indicator">
+                                <i data-lucide="play"></i>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">FILM CUT</span>
+                            <h3 class="project-title">Monkey Man Film Mashup</h3>
+                            <p class="project-client">Action Editorial</p>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 3: Film Cuts Showcase -->
+                    <div class="project-card tilt-card" data-category="film-cuts" data-video="https://livid.com/watch/ysty5WZK0HcA" data-title="Extraction Film Mashup" data-client="Action Editorial" data-role="Lead Video Editor">
+                        <div class="project-media">
+                            <video class="card-video" poster="assets/extraction_thumb.png" data-preview="https://assets.mixkit.co/videos/preview/mixkit-retro-futurism-3d-wireframe-landscape-41865-large.mp4" loop muted playsinline preload="none"></video>
+                            <div class="card-overlay"></div>
+                            <div class="play-indicator">
+                                <i data-lucide="play"></i>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">FILM CUT</span>
+                            <h3 class="project-title">Extraction Film Mashup</h3>
+                            <p class="project-client">Action Editorial</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Explore Archives Bar between Film Cuts and Reels -->
+                <div class="view-all-container" style="text-align: center; margin-top: 4.5rem; margin-bottom: 4.5rem;">
+                    <a href="work.html" class="btn btn-primary btn-glowing-showcase text-hover-trigger" style="min-width: 320px; padding: 1.25rem 2.8rem; letter-spacing: 0.15em; font-size: 0.88rem;">
+                        <span>EXPLORE ALL ARCHIVES (30+ PROJECTS)</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right" style="margin-left: 8px; transition: transform 0.3s ease;"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                    </a>
+                </div>
+
+                <!-- Featured Reels Section Header -->
+                <div style="margin-bottom: 2.5rem; text-align: center;">
+                    <span class="sub-heading" style="padding-left: 0; margin-bottom: 0.5rem; display: inline-block;">VERTICAL FORMAT</span>
+                    <h3 style="font-family: var(--font-heading); font-size: clamp(1.8rem, 3.5vw, 2.5rem); font-weight: 800; letter-spacing: -0.01em; color: var(--text-white);">
+                        FEATURED <span style="color: transparent; -webkit-text-stroke: 1.2px var(--accent-red); text-shadow: 0 0 25px var(--accent-glow);">REELS</span> &amp; SHORTS
+                    </h3>
+                </div>
+
+                <!-- Featured Reels Grid: 3 Portrait Cards -->
+                <div class="featured-reels-grid">
+                    <!-- Featured Reel 1: Client Reel (leAF Digital Academy) -->
+                    <div class="project-card tilt-card" data-category="reels" data-video="https://youtube.com/shorts/340-XNPGPi8?feature=share" data-title="leAF Digital Academy" data-client="Client Project" data-role="Lead Video Editor">
+                        <div class="project-media">
+                            <video class="card-video" poster="assets/Reel Client Red.png" data-preview="https://assets.mixkit.co/videos/preview/mixkit-cyberpunk-city-street-with-neon-lights-and-rain-41793-large.mp4" loop muted playsinline preload="none"></video>
+                            <div class="card-overlay"></div>
+                            <div class="play-indicator">
+                                <i data-lucide="play"></i>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">CLIENT REEL</span>
+                            <h3 class="project-title">leAF Digital Academy</h3>
+                            <p class="project-client">Client Project</p>
+                        </div>
+                    </div>
+
+                    <!-- Featured Reel 2: Instagram Reel (Sore Film Reel) -->
+                    <div class="project-card tilt-card" data-category="reels" data-video="https://youtu.be/NryqMHF3-uA" data-title="Sore Film Reel" data-client="Personal Project" data-role="Lead Video Editor">
+                        <div class="project-media">
+                            <video class="card-video" poster="assets/Reel Instagram Red.png" data-preview="https://assets.mixkit.co/videos/preview/mixkit-cyberpunk-look-of-a-woman-in-a-dark-alley-41905-large.mp4" loop muted playsinline preload="none"></video>
+                            <div class="card-overlay"></div>
+                            <div class="play-indicator">
+                                <i data-lucide="play"></i>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">INSTAGRAM REEL</span>
+                            <h3 class="project-title">Sore Film Reel</h3>
+                            <p class="project-client">Personal Project</p>
+                        </div>
+                    </div>
+
+                    <!-- Featured Reel 3: Media Studies Reel (what is monologue?) -->
+                    <div class="project-card tilt-card" data-category="reels" data-video="https://livid.com/watch/MvV4Ko85TQO5" data-title="what is monologue?" data-client="Personal Project" data-role="Lead Video Editor">
+                        <div class="project-media">
+                            <video class="card-video" poster="assets/Reel Media Studies Red.png" data-preview="https://assets.mixkit.co/videos/preview/mixkit-rotating-clockwork-gears-close-up-41909-large.mp4" loop muted playsinline preload="none"></video>
+                            <div class="card-overlay"></div>
+                            <div class="play-indicator">
+                                <i data-lucide="play"></i>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">MEDIA STUDIES REEL</span>
+                            <h3 class="project-title">what is monologue?</h3>
+                            <p class="project-client">Personal Project</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="view-all-container" style="text-align: center; margin-top: 4.5rem;">
+                    <a href="work.html?filter=reels" class="btn btn-primary btn-glowing-showcase text-hover-trigger" style="min-width: 320px; padding: 1.25rem 2.8rem; letter-spacing: 0.15em; font-size: 0.88rem;">
+                        <span>EXPLORE ALL 16+ REELS ARCHIVE</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right" style="margin-left: 8px; transition: transform 0.3s ease;"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA & Contact Section -->
+        <section class="contact-section" id="contact">
+            <div class="container">
+                <div class="grid grid-2">
+                    <!-- Left: Text and Quick Contacts -->
+                    <div class="contact-details">
+                        <span class="sub-heading">CONTACT</span>
+                        <h2 class="section-title text-left">LET'S SHAPE YOUR PROJECT</h2>
+                        <p class="paragraph">
+                            Ready to take your videos to the next level? Get in touch to discuss booking rates, availability, or to request custom editing quotes.
+                        </p>
+                        
+                        <div class="contact-methods">
+                            <div class="contact-item">
+                                <div class="icon-circle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                                </div>
+                                <div>
+                                    <span class="contact-label">EMAIL ME</span>
+                                    <a href="mailto:jes009now@gmail.com" class="contact-value text-hover-trigger">jes009now@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon-circle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                                </div>
+                                <div>
+                                    <span class="contact-label">INSTAGRAM</span>
+                                    <a href="https://instagram.com/mr.__snow" target="_blank" rel="noopener noreferrer" class="contact-value text-hover-trigger">@mr.__snow</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon-circle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-circle"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+                                </div>
+                                <div>
+                                    <span class="contact-label">WHATSAPP</span>
+                                    <a href="https://wa.me/918281265705" target="_blank" class="contact-value text-hover-trigger">+91 82812 65705</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon-circle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                                </div>
+                                <div>
+                                    <span class="contact-label">LINKEDIN</span>
+                                    <a href="https://www.linkedin.com/in/jesnow-biju-2353a9286" target="_blank" class="contact-value text-hover-trigger">Jesnow Biju</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Contact Form -->
+                    <div class="contact-form-container glass-card">
+                        <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                            <!-- Web3Forms Integration Details -->
+                            <input type="hidden" name="access_key" value="a661877e-fb39-465c-82a2-9839d8939d41">
+                            <input type="hidden" name="subject" value="New Portfolio Contact Message">
+                            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                            
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" required class="form-input text-hover-trigger" placeholder=" ">
+                                <label for="name" class="form-label">YOUR NAME</label>
+                            </div>
+                            
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" required class="form-input text-hover-trigger" placeholder=" ">
+                                <label for="email" class="form-label">EMAIL ADDRESS</label>
+                            </div>
+                            
+
+                            
+                            <div class="form-group">
+                                <textarea id="message" name="message" required class="form-input text-hover-trigger" rows="4" placeholder=" "></textarea>
+                                <label for="message" class="form-label">PROJECT BRIEF & DETAILS</label>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-block text-hover-trigger">
+                                <span>SEND MESSAGE</span>
+                                <i data-lucide="arrow-right"></i>
+                            </button>
+                            <div class="form-status" id="form-status"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container flex justify-between align-center flex-wrap">
+            <div class="footer-brand">
+                <span class="logo">Jesnow.Portfolio</span>
+                <p class="footer-copy">&copy; 2026 JESNOW PORTFOLIO. ALL RIGHTS RESERVED.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#about" class="text-hover-trigger">ABOUT</a>
+                <a href="#skills" class="text-hover-trigger">SKILLS</a>
+                <a href="#work" class="text-hover-trigger">WORK</a>
+                <a href="#contact" class="text-hover-trigger">CONTACT</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Full-Screen Immersive Lightbox Modal for Video Playback -->
+    <div class="lightbox" id="video-lightbox">
+        <button class="lightbox-close text-hover-trigger" aria-label="Close Lightbox">
+            <i data-lucide="x"></i>
+        </button>
+        <div class="lightbox-content">
+            <div class="lightbox-video-wrapper" style="display: flex; flex-direction: column; align-items: stretch;">
+                <div style="flex: 1; position: relative; display: flex; align-items: center; justify-content: center; background: #000; min-height: 0;">
+                    <div class="lightbox-loader" id="lightbox-loader">
+                        <div class="spinner-ring"></div>
+                    </div>
+                    <video id="lightbox-video" controls autoplay playsinline src=""></video>
+                    <iframe id="lightbox-iframe" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" allowfullscreen sandbox="allow-scripts allow-same-origin allow-presentation allow-popups allow-forms" style="display: none; width: 100%; height: 100%; border: none;"></iframe>
+                </div>
+                <div class="lightbox-fullscreen-notice" style="background: #141414; border-top: 1px solid rgba(255, 255, 255, 0.15); padding: 15px; display: flex; align-items: center; justify-content: center; gap: 8px; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.22em; color: #ffffff; text-transform: uppercase; text-shadow: 0 0 10px rgba(255, 255, 255, 0.4); animation: pulse 2.5s infinite;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-maximize-2" style="color: #ffffff;"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg>
+                    <span>Tap fullscreen and enjoy the full experience.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <!-- Three.js Library via CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+    <!-- Lucide Icons Package via CDN -->
+    <script src="https://unpkg.com/lucide@latest" defer></script>
+    <!-- Custom Application JS -->
+    <script src="app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jesnow Portfolio - Full Project Showcase. A complete archive of editorial works, film cuts, reels, and commercial video projects.">
+    <title>JESNOW PORTFOLIO | Project Showcase Archive</title>
+    
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https:; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; media-src 'self' https:; connect-src 'self' https:; frame-src 'self' https://livid.com https://*.livid.com https://player.vimeo.com https://*.vimeo.com https://www.youtube.com https://youtube.com https://*.youtube.com;">
+
+    <!-- Network Preconnect Optimizations -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://unpkg.com">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    
+    <!-- Vanilla CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+    <!-- Background Grid and Overlay Effects -->
+    <div class="bg-grid"></div>
+    <div class="noise-overlay"></div>
+
+    <!-- Header & Navigation -->
+    <header class="navbar">
+        <a href="index.html" class="logo text-hover-trigger">
+            <span>Jesnow</span><span class="logo-dot">.</span><span>Portfolio</span>
+        </a>
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-link text-hover-trigger">Home</a>
+            <a href="index.html#about" class="nav-link text-hover-trigger">About</a>
+            <a href="index.html#skills" class="nav-link text-hover-trigger">Skills</a>
+            <a href="index.html#work" class="nav-link text-hover-trigger">Work</a>
+            <a href="index.html#contact" class="nav-link text-hover-trigger">Contact</a>
+        </nav>
+        <div class="nav-cta">
+            <a href="index.html#contact" class="btn btn-nav text-hover-trigger">LET'S TALK</a>
+        </div>
+        <button class="mobile-menu-toggle text-hover-trigger" aria-label="Toggle Menu">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-drawer">
+        <nav class="drawer-nav">
+            <a href="index.html" class="drawer-link">Home</a>
+            <a href="index.html#about" class="drawer-link">About</a>
+            <a href="index.html#skills" class="drawer-link">Skills</a>
+            <a href="index.html#work" class="drawer-link">Work</a>
+            <a href="index.html#contact" class="drawer-link">Contact</a>
+            <a href="index.html#contact" class="btn btn-drawer mt-4">LET'S COLLABORATE</a>
+        </nav>
+    </div>
+
+    <main style="padding-top: 100px;">
+        <!-- Showcase Header Section -->
+        <section class="work-section" style="padding-bottom: 2rem;">
+            <div class="container">
+                <div class="section-header" style="margin-bottom: 2rem;">
+                    <span class="sub-heading">SHOWCASE ARCHIVE</span>
+                    <h2 class="section-title">ALL PROJECTS</h2>
+                    <p class="section-subtitle">Browse through my complete post-production archive of commercials, reels, and narrative cuts.</p>
+                </div>
+
+                <!-- Gallery Categories Filter -->
+                <div class="filter-container">
+                    <button class="filter-btn active text-hover-trigger" data-filter="film-cuts">FILM CUTS</button>
+                    <button class="filter-btn text-hover-trigger" data-filter="reels">REELS</button>
+                    <button class="filter-btn text-hover-trigger" data-filter="colour-graded">COLOUR GRADED</button>
+                </div>
+
+                <!-- Expanded Video Showcase Grid -->
+                <div class="gallery-grid" id="gallery-grid">
+                    
+                    <!-- Card 1 (Film Cuts) -->
+                    <div class="project-card tilt-card" data-category="film-cuts" data-video="https://youtu.be/RAO0_nqH4wc" data-title="Marco Film Mashup" data-client="Director's Cut" data-role="Lead Video Editor">
+                        <div class="project-media">
+                            <video class="card-video" poster="assets/marco_thumb.png" data-preview="https://assets.mixkit.co/videos/preview/mixkit-cyberpunk-city-street-with-neon-lights-and-rain-41793-large.mp4" loop muted playsinline preload="none"></video>
+                            <div class="card-overlay"></div>
+                            <div class="play-indicator">
+                                <i data-lucide="play"></i>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">FILM CUT</span>
+                            <h3 class="project-title">Marco Film Mashup</h3>
+                            <p class="project-client">Director's Cut</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 (Film Cuts) -->
+                    <div class="project-card tilt-card" data-category="film-cuts" data-video="https://livid.com/watch/oCrXeVA0CKNv" data-title="Monkey Man Film Mashup" data-client="Action Editorial" data-role="Lead Video Editor">
+                        <div class="project-media">
+                            <video class="card-video" poster="assets/monkeyman_thumb.png" data-preview="https://assets.mixkit.co/videos/preview/mixkit-mysterious-forest-foggy-path-41857-large.mp4" loop muted playsinline preload="none"></video>
+                            <div class="card-overlay"></div>
+                            <div class="play-indicator">
+                                <i data-lucide="play"></i>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">FILM CUT</span>
+                            <h3 class="project-title">Monkey Man Film Mashup</h3>
+                            <p class="project-client">Action Editorial</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 (Film Cuts) -->
+                    <div class="project-card tilt-card" data-category="film-cuts" data-video="https://livid.com/watch/ysty5WZK0HcA" data-title="Extraction Film Mashup" data-client="Action Editorial" data-role="Lead Video Editor">
+                        <div class="project-media">
+                            <video class="card-video" poster="assets/extraction_thumb.png" data-preview="https://assets.mixkit.co/videos/preview/mixkit-retro-futurism-3d-wireframe-landscape-41865-large.mp4" loop muted playsinline preload="none"></video>
+                            <div class="card-overlay"></div>
+                            <div class="play-indicator">
+                                <i data-lucide="play"></i>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">FILM CUT</span>
+                            <h3 class="project-title">Extraction Film Mashup</h3>
+                            <p class="project-client">Action Editorial</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 (Film Cuts) -->
+                    <div class="project-card tilt-card" data-category="film-cuts" data-video="https://livid.com/watch/4DpjWT8Nmjzp" data-title="Doctor Strange Animated Film Mashup" data-client="Personal Project" data-role="Lead Video Editor">
+                        <div class="project-media">
+                            <video class="card-video" poster="assets/doctorstrange.png" data-preview="https://assets.mixkit.co/videos/preview/mixkit-abstract-laser-lights-background-41869-large.mp4" loop muted playsinline preload="none"></video>
+                            <div class="card-overlay"></div>
+                            <div class="play-indicator">
+                                <i data-lucide="play"></i>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">FILM CUT</span>
+                            <h3 class="project-title">Doctor Strange Animated Film Mashup</h3>
+                            <p class="project-client">Personal Project</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 (Film Cuts) -->
+                    <div class="project-card tilt-card" data-category="film-cuts" data-video="https://livid.com/watch/eggLSG95UeFW" data-title="Bullet Train Film Mashup" data-client="Personal Project" data-role="Lead Video Editor">
+                        <div class="project-media">
+                            <video class="card-video" poster="assets/bullet train.png" data-preview="https://assets.mixkit.co/videos/preview/mixkit-cinematic-mountain-peaks-shrouded-in-clouds-41873-large.mp4" loop muted playsinline preload="none"></video>
+                            <div class="card-overlay"></div>
+                            <div class="play-indicator">
+                                <i data-lucide="play"></i>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">FILM CUT</span>
+                            <h3 class="project-title">Bullet Train Film Mashup</h3>
+                            <p class="project-client">Personal Project</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 6 (Film Cuts) -->
+                    <div class="project-card tilt-card" data-category="film-cuts" data-video="https://livid.com/watch/M22foYqkY9kB" data-title="Wheel of Time Series Mashup" data-client="Personal Project" data-role="Lead Video Editor">
+                        <div class="project-media">
+                            <video class="card-video" poster="assets/thewheel of time.png" data-preview="https://assets.mixkit.co/videos/preview/mixkit-fast-pacing-motocross-rider-in-a-forest-41887-large.mp4" loop muted playsinline preload="none"></video>
+                            <div class="card-overlay"></div>
+                            <div class="play-indicator">
+                                <i data-lucide="play"></i>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">FILM CUT</span>
+                            <h3 class="project-title">Wheel of Time Series Mashup</h3>
+                            <p class="project-client">Personal Project</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 7 (Film Cuts) -->
+                    <div class="project-card tilt-card" data-category="film-cuts" data-video="https://livid.com/watch/OesTO8FuTkq5" data-title="Avatar Trailer Cut" data-client="Personal Project" data-role="Lead Video Editor">
+                        <div class="project-media">
+                            <video class="card-video" poster="assets/avatar.png" data-preview="https://assets.mixkit.co/videos/preview/mixkit-neon-streets-of-tokyo-at-night-41893-large.mp4" loop muted playsinline preload="none"></video>
+                            <div class="card-overlay"></div>
+                            <div class="play-indicator">
+                                <i data-lucide="play"></i>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">FILM CUT</span>
+                            <h3 class="project-title">Avatar Trailer Cut</h3>
+                            <p class="project-client">Personal Project</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 8 (Film Cuts) -->
+                    <div class="project-card tilt-card" data-category="film-cuts" data-video="https://livid.com/watch/XcEl2L3vU6yv" data-title="Parava Film Mashup" data-client="Personal Project" data-role="Lead Video Editor">
+                        <div class="project-media">
+                            <video class="card-video" poster="assets/parava.png" data-preview="https://assets.mixkit.co/videos/preview/mixkit-cyberpunk-look-of-a-woman-in-a-dark-alley-41905-large.mp4" loop muted playsinline preload="none"></video>
+                            <div class="card-overlay"></div>
+                            <div class="play-indicator">
+                                <i data-lucide="play"></i>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">FILM CUT</span>
+                            <h3 class="project-title">Parava Film Mashup</h3>
+                            <p class="project-client">Personal Project</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 9 (Film Cuts) -->
+                    <div class="project-card tilt-card" data-category="film-cuts" data-video="https://livid.com/watch/jnLAjCQbgApD" data-title="Cinephile" data-client="Personal Project" data-role="Lead Video Editor">
+                        <div class="project-media">
+                            <video class="card-video" poster="assets/cinephile.png" data-preview="https://assets.mixkit.co/videos/preview/mixkit-rotating-clockwork-gears-close-up-41909-large.mp4" loop muted playsinline preload="none"></video>
+                            <div class="card-overlay"></div>
+                            <div class="play-indicator">
+                                <i data-lucide="play"></i>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">FILM CUT</span>
+                            <h3 class="project-title">Cinephile</h3>
+                            <p class="project-client">Personal Project</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 10 (Film Cuts) -->
+                    <div class="project-card tilt-card" data-category="film-cuts" data-video="https://livid.com/watch/fNpCIco9hunh" data-title="John Wick Mashup" data-client="Personal Project" data-role="Lead Video Editor">
+                        <div class="project-media">
+                            <video class="card-video" poster="assets/JOHN WICK.png" data-preview="https://assets.mixkit.co/videos/preview/mixkit-panoramic-view-of-old-city-streets-41913-large.mp4" loop muted playsinline preload="none"></video>
+                            <div class="card-overlay"></div>
+                            <div class="play-indicator">
+                                <i data-lucide="play"></i>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">FILM CUT</span>
+                            <h3 class="project-title">John Wick Mashup</h3>
+                            <p class="project-client">Personal Project</p>
+                        </div>
+                    </div>
+
+                    <!-- Reel Section (Top = Latest) -->
+                    <!-- New Latest Reel: leAF Digital Academy (Client) -->
+                    <div class="project-card tilt-card" data-category="reels" data-video="https://youtube.com/shorts/340-XNPGPi8?feature=share" data-title="leAF Digital Academy" data-client="Client Project" data-role="Lead Video Editor" style="display: none;">
+                        <div class="project-media">
+                            <video class="card-video" poster="assets/Reel Client Red.png" data-preview="https://assets.mixkit.co/videos/preview/mixkit-cyberpunk-city-street-with-neon-lights-and-rain-41793-large.mp4" loop muted playsinline preload="none"></video>
+                            <div class="card-overlay"></div>
+                            <div class="play-indicator">
+                                <i data-lucide="play"></i>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">REEL</span>
+                            <h3 class="project-title">leAF Digital Academy</h3>
+                            <p class="project-client">Client Project</p>
+                        </div>
+                    </div>
+
+                    <!-- New Latest Reel: leAF Digital Academy 2 (Client) -->
+                    <div class="project-card tilt-card" data-category="reels" data-video="https://youtube.com/shorts/K-ivEPaMkZ0?feature=share" data-title="leAF Digital Academy 2" data-client="Client Project" data-role="Lead Video Editor" style="display: none;">
+                        <div class="project-media">
+                            <video class="card-video" poster="assets/Reel Client Red.png" data-preview="https://assets.mixkit.co/videos/preview/mixkit-virtual-reality-headset-visual-concept-41923-large.mp4" loop muted playsinline preload="none"></video>
+                            <div class="card-overlay"></div>
+                            <div class="play-indicator">
+                                <i data-lucide="play"></i>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">REEL</span>
+                            <h3 class="project-title">leAF Digital Academy 2</h3>
+                            <p class="project-client">Client Project</p>
+                        </div>
+                    </div>
+
+                    <!-- New Latest Reel: Sore Film Reel (Instagram) -->
+                    <div class="project-card tilt-card" data-category="reels" data-video="https://youtu.be/NryqMHF3-uA" data-title="Sore Film Reel" data-client="Personal Project" data-role="Lead Video Editor" style="display: none;">
+                        <div class="project-media">
+                            <video class="card-video" poster="assets/Reel Instagram Red.png" data-preview="https://assets.mixkit.co/videos/preview/mixkit-cyberpunk-city-street-with-neon-lights-and-rain-41793-large.mp4" loop muted playsinline preload="none"></video>
+                            <div class="card-overlay"></div>
+                            <div class="play-indicator">
+                                <i data-lucide="play"></i>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">REEL</span>
+                            <h3 class="project-title">Sore Film Reel</h3>
+                            <p class="project-client">Personal Project</p>
+                        </div>
+                    </div>
+
+                    <!-- New Latest Reel: Youth Film Reel (Instagram) -->
+                    <div class="project-card tilt-card" data-category="reels" data-video="https://youtu.be/4v8_2yD8vHE" data-title="Youth Film Reel" data-client="Personal Project" data-role="Lead Video Editor" style="display: none;">
+                        <div class="project-media">
+                            <video class="card-video" poster="assets/Reel Instagram Red.png" data-preview="https://assets.mixkit.co/videos/preview/mixkit-neon-streets-of-tokyo-at-night-41893-large.mp4" loop muted playsinline preload="none"></video>
+                            <div class="card-overlay"></div>
+                            <div class="play-indicator">
+                                <i data-lucide="play"></i>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">REEL</span>
+                            <h3 class="project-title">Youth Film Reel</h3>
+                            <p class="project-client">Personal Project</p>
+                        </div>
+                    </div>
+
+                    <!-- New Latest Reel: Palm Sunday Film Reel (Instagram) -->
+                    <div class="project-card tilt-card" data-category="reels" data-video="https://youtu.be/CEqUvbDtRyw" data-title="Palm Sunday Film Reel" data-client="Personal Project" data-role="Lead Video Editor" style="display: none;">
+                        <div class="project-media">
+                            <video class="card-video" poster="assets/Reel Instagram Red.png" data-preview="https://assets.mixkit.co/videos/preview/mixkit-cyberpunk-look-of-a-woman-in-a-dark-alley-41905-large.mp4" loop muted playsinline preload="none"></video>
+                            <div class="card-overlay"></div>
+                            <div class="play-indicator">
+                                <i data-lucide="play"></i>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">REEL</span>
+                            <h3 class="project-title">Palm Sunday Film Reel</h3>
+                            <p class="project-client">Personal Project</p>
+                        </div>
+                    </div>
+
+                    <!-- New Latest Reel: TEDx Promotion (Media Studies) -->
+                    <div class="project-card tilt-card" data-category="reels" data-video="https://youtu.be/HPRz00WhuPI" data-title="TEDx Promotion" data-client="Personal Project" data-role="Lead Video Editor" style="display: none;">
+                        <div class="project-media">
+                            <video class="card-video" poster="assets/Reel Media Studies Red.png" data-preview="https://assets.mixkit.co/videos/preview/mixkit-rotating-clockwork-gears-close-up-41909-large.mp4" loop muted playsinline preload="none"></video>
+                            <div class="card-overlay"></div>
+                            <div class="play-indicator">
+                                <i data-lucide="play"></i>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">REEL</span>
+                            <h3 class="project-title">TEDx Promotion</h3>
+                            <p class="project-client">Personal Project</p>
+                        </div>
+                    </div>
+
+                    <!-- 1. what is monologue? -->
+                    <div class="project-card tilt-card" data-category="reels" data-video="https://livid.com/watch/MvV4Ko85TQO5" data-title="what is monologue?" data-client="Personal Project" data-role="Lead Video Editor" style="display: none;">
+                        <div class="project-media">
+                            <video class="card-video" poster="assets/Reel Media Studies Red.png" data-preview="https://assets.mixkit.co/videos/preview/mixkit-rotating-clockwork-gears-close-up-41909-large.mp4" loop muted playsinline preload="none"></video>
+                            <div class="card-overlay"></div>
+                            <div class="play-indicator">
+                                <i data-lucide="play"></i>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">REEL</span>
+                            <h3 class="project-title">what is monologue?</h3>
+                            <p class="project-client">Personal Project</p>
+                        </div>
+                    </div>
+
+                    <!-- 2. weekend movie time -->
+                    <div class="project-card tilt-card" data-category="reels" data-video="https://livid.com/watch/eWgeQsKevDJy" data-title="weekend movie time" data-client="Personal Project" data-role="Lead Video Editor" style="display: none;">
+                        <div class="project-media">
+                            <video class="card-video" poster="assets/Reel Media Studies Red.png" data-preview="https://assets.mixkit.co/videos/preview/mixkit-cyberpunk-look-of-a-woman-in-a-dark-alley-41905-large.mp4" loop muted playsinline preload="none"></video>
+                            <div class="card-overlay"></div>
+                            <div class="play-indicator">
+                                <i data-lucide="play"></i>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">REEL</span>
+                            <h3 class="project-title">weekend movie time</h3>
+                            <p class="project-client">Personal Project</p>
+                        </div>
+                    </div>
+
+                    <!-- 3. The hut restaurant -->
+                    <div class="project-card tilt-card" data-category="reels" data-video="https://livid.com/watch/07p4DnGb0EgW" data-title="The hut restaurant" data-client="Client Project" data-role="Lead Video Editor" style="display: none;">
+                        <div class="project-media">
+                            <video class="card-video" poster="assets/Reel Client Red.png" data-preview="https://assets.mixkit.co/videos/preview/mixkit-futuristic-retro-wireframe-tunnel-41935-large.mp4" loop muted playsinline preload="none"></video>
+                            <div class="card-overlay"></div>
+                            <div class="play-indicator">
+                                <i data-lucide="play"></i>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">REEL</span>
+                            <h3 class="project-title">The hut restaurant</h3>
+                            <p class="project-client">Client Project</p>
+                        </div>
+                    </div>
+
+                    <!-- 4. BNI Group -->
+                    <div class="project-card tilt-card" data-category="reels" data-video="https://livid.com/watch/Xc_dwivL8LvF" data-title="BNI Group" data-client="Client Project" data-role="Lead Video Editor" style="display: none;">
+                        <div class="project-media">
+                            <video class="card-video" poster="assets/Reel Client Red.png" data-preview="https://assets.mixkit.co/videos/preview/mixkit-virtual-reality-headset-visual-concept-41923-large.mp4" loop muted playsinline preload="none"></video>
+                            <div class="card-overlay"></div>
+                            <div class="play-indicator">
+                                <i data-lucide="play"></i>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">REEL</span>
+                            <h3 class="project-title">BNI Group</h3>
+                            <p class="project-client">Client Project</p>
+                        </div>
+                    </div>
+
+                    <!-- 5. BNI GROUP -->
+                    <div class="project-card tilt-card" data-category="reels" data-video="https://livid.com/watch/85aodTCgiZ4J" data-title="BNI GROUP" data-client="Client Project" data-role="Lead Video Editor" style="display: none;">
+                        <div class="project-media">
+                            <video class="card-video" poster="assets/Reel Client Red.png" data-preview="https://assets.mixkit.co/videos/preview/mixkit-cyberpunk-city-street-with-neon-lights-and-rain-41793-large.mp4" loop muted playsinline preload="none"></video>
+                            <div class="card-overlay"></div>
+                            <div class="play-indicator">
+                                <i data-lucide="play"></i>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">REEL</span>
+                            <h3 class="project-title">BNI GROUP</h3>
+                            <p class="project-client">Client Project</p>
+                        </div>
+                    </div>
+
+                    <!-- 6. BNI 2 -->
+                    <div class="project-card tilt-card" data-category="reels" data-video="https://livid.com/watch/65M189RYpgHb" data-title="BNI 2" data-client="Client Project" data-role="Lead Video Editor" style="display: none;">
+                        <div class="project-media">
+                            <video class="card-video" poster="assets/Reel Client Red.png" data-preview="https://assets.mixkit.co/videos/preview/mixkit-cyberpunk-city-street-with-neon-lights-and-rain-41793-large.mp4" loop muted playsinline preload="none"></video>
+                            <div class="card-overlay"></div>
+                            <div class="play-indicator">
+                                <i data-lucide="play"></i>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">REEL</span>
+                            <h3 class="project-title">BNI 2</h3>
+                            <p class="project-client">Client Project</p>
+                        </div>
+                    </div>
+
+                    <!-- 7. Tamil Filmakers -->
+                    <div class="project-card tilt-card" data-category="reels" data-video="https://livid.com/watch/dgd4YA5njOzn" data-title="Tamil Filmakers" data-client="Personal Project" data-role="Lead Video Editor" style="display: none;">
+                        <div class="project-media">
+                            <video class="card-video" poster="assets/Reel Instagram Red.png" data-preview="https://assets.mixkit.co/videos/preview/mixkit-cyberpunk-city-street-with-neon-lights-and-rain-41793-large.mp4" loop muted playsinline preload="none"></video>
+                            <div class="card-overlay"></div>
+                            <div class="play-indicator">
+                                <i data-lucide="play"></i>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">REEL</span>
+                            <h3 class="project-title">Tamil Filmakers</h3>
+                            <p class="project-client">Personal Project</p>
+                        </div>
+                    </div>
+
+                    <!-- 8. For Editors -->
+                    <div class="project-card tilt-card" data-category="reels" data-video="https://livid.com/watch/LtkOj289ZORR" data-title="For Editors" data-client="Personal Project" data-role="Lead Video Editor" style="display: none;">
+                        <div class="project-media">
+                            <video class="card-video" poster="assets/Reel Instagram Red.png" data-preview="https://assets.mixkit.co/videos/preview/mixkit-cyberpunk-city-street-with-neon-lights-and-rain-41793-large.mp4" loop muted playsinline preload="none"></video>
+                            <div class="card-overlay"></div>
+                            <div class="play-indicator">
+                                <i data-lucide="play"></i>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">REEL</span>
+                            <h3 class="project-title">For Editors</h3>
+                            <p class="project-client">Personal Project</p>
+                        </div>
+                    </div>
+
+                    <!-- 9. Evening Vibe -->
+                    <div class="project-card tilt-card" data-category="reels" data-video="https://livid.com/watch/-p41J4v7sKN9" data-title="Evening Vibe" data-client="Personal Project" data-role="Lead Video Editor" style="display: none;">
+                        <div class="project-media">
+                            <video class="card-video" poster="assets/Reel Instagram Red.png" data-preview="https://assets.mixkit.co/videos/preview/mixkit-cyberpunk-city-street-with-neon-lights-and-rain-41793-large.mp4" loop muted playsinline preload="none"></video>
+                            <div class="card-overlay"></div>
+                            <div class="play-indicator">
+                                <i data-lucide="play"></i>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">REEL</span>
+                            <h3 class="project-title">Evening Vibe</h3>
+                            <p class="project-client">Personal Project</p>
+                        </div>
+                    </div>
+
+                    <!-- 10. Doctor advise -->
+                    <div class="project-card tilt-card" data-category="reels" data-video="https://livid.com/watch/HRCqKoli14U9" data-title="Doctor advise" data-client="Client Project" data-role="Lead Video Editor" style="display: none;">
+                        <div class="project-media">
+                            <video class="card-video" poster="assets/Reel Client Red.png" data-preview="https://assets.mixkit.co/videos/preview/mixkit-panoramic-view-of-old-city-streets-41913-large.mp4" loop muted playsinline preload="none"></video>
+                            <div class="card-overlay"></div>
+                            <div class="play-indicator">
+                                <i data-lucide="play"></i>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">REEL</span>
+                            <h3 class="project-title">Doctor advise</h3>
+                            <p class="project-client">Client Project</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 17 (Colour Graded) -->
+                    <div class="project-card tilt-card" data-category="colour-graded" data-video="https://livid.com/watch/OYGnO4XT16gC" data-title="Showcase Graded 1" data-client="Personal Project" data-role="Lead Video Editor" style="display: none;">
+                        <div class="project-media">
+                            <video class="card-video" poster="assets/Graded/Graded Red.png" data-preview="https://assets.mixkit.co/videos/preview/mixkit-retro-futurism-3d-wireframe-landscape-41865-large.mp4" loop muted playsinline preload="none"></video>
+                            <div class="card-overlay"></div>
+                            <div class="play-indicator">
+                                <i data-lucide="play"></i>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">COLOUR GRADED</span>
+                            <h3 class="project-title">Showcase Graded 1</h3>
+                            <p class="project-client">Personal Project</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 18 (Colour Graded) -->
+                    <div class="project-card tilt-card" data-category="colour-graded" data-video="https://livid.com/watch/aW1YaEcZbsZ3" data-title="Showcase Graded 2" data-client="Personal Project" data-role="Lead Video Editor" style="display: none;">
+                        <div class="project-media">
+                            <video class="card-video" poster="assets/Graded/Graded Red.png" data-preview="https://assets.mixkit.co/videos/preview/mixkit-retro-futurism-3d-wireframe-landscape-41865-large.mp4" loop muted playsinline preload="none"></video>
+                            <div class="card-overlay"></div>
+                            <div class="play-indicator">
+                                <i data-lucide="play"></i>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">COLOUR GRADED</span>
+                            <h3 class="project-title">Showcase Graded 2</h3>
+                            <p class="project-client">Personal Project</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 19 (Colour Graded) -->
+                    <div class="project-card tilt-card" data-category="colour-graded" data-video="https://livid.com/watch/R8ytJBzUMVvM" data-title="Showcase Graded 3" data-client="Personal Project" data-role="Lead Video Editor" style="display: none;">
+                        <div class="project-media">
+                            <video class="card-video" poster="assets/Graded/Graded Red.png" data-preview="https://assets.mixkit.co/videos/preview/mixkit-retro-futurism-3d-wireframe-landscape-41865-large.mp4" loop muted playsinline preload="none"></video>
+                            <div class="card-overlay"></div>
+                            <div class="play-indicator">
+                                <i data-lucide="play"></i>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">COLOUR GRADED</span>
+                            <h3 class="project-title">Showcase Graded 3</h3>
+                            <p class="project-client">Personal Project</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 20 (Colour Graded) -->
+                    <div class="project-card tilt-card" data-category="colour-graded" data-video="https://livid.com/watch/Y8_b0IEN-1NC" data-title="Showcase Graded 4" data-client="Personal Project" data-role="Lead Video Editor" style="display: none;">
+                        <div class="project-media">
+                            <video class="card-video" poster="assets/Graded/Graded Red.png" data-preview="https://assets.mixkit.co/videos/preview/mixkit-retro-futurism-3d-wireframe-landscape-41865-large.mp4" loop muted playsinline preload="none"></video>
+                            <div class="card-overlay"></div>
+                            <div class="play-indicator">
+                                <i data-lucide="play"></i>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">COLOUR GRADED</span>
+                            <h3 class="project-title">Showcase Graded 4</h3>
+                            <p class="project-client">Personal Project</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 21 (Colour Graded - Template for Graded 5) -->
+                    <div class="project-card tilt-card" data-category="colour-graded" data-video="https://livid.com/watch/cxYTcYDtog0u" data-title="Showcase Graded 5" data-client="Personal Project" data-role="Lead Video Editor" style="display: none;">
+                        <div class="project-media">
+                            <video class="card-video" poster="assets/Graded/Graded Red.png" data-preview="https://assets.mixkit.co/videos/preview/mixkit-retro-futurism-3d-wireframe-landscape-41865-large.mp4" loop muted playsinline preload="none"></video>
+                            <div class="card-overlay"></div>
+                            <div class="play-indicator">
+                                <i data-lucide="play"></i>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">COLOUR GRADED</span>
+                            <h3 class="project-title">Showcase Graded 5</h3>
+                            <p class="project-client">Personal Project</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="back-home-container" style="text-align: center; margin-top: 5rem;">
+                    <a href="index.html" class="btn btn-secondary text-hover-trigger">
+                        <span>← BACK TO PORTFOLIO</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container flex justify-between align-center flex-wrap">
+            <div class="footer-brand">
+                <span class="logo">Jesnow.Portfolio</span>
+                <p class="footer-copy">&copy; 2026 JESNOW PORTFOLIO. ALL RIGHTS RESERVED.</p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html" class="text-hover-trigger">HOME</a>
+                <a href="index.html#about" class="text-hover-trigger">ABOUT</a>
+                <a href="index.html#skills" class="text-hover-trigger">SKILLS</a>
+                <a href="index.html#contact" class="text-hover-trigger">CONTACT</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Full-Screen Immersive Lightbox Modal for Video Playback -->
+    <div class="lightbox" id="video-lightbox">
+        <button class="lightbox-close text-hover-trigger" aria-label="Close Lightbox">
+            <i data-lucide="x"></i>
+        </button>
+        <div class="lightbox-content">
+            <div class="lightbox-video-wrapper" style="display: flex; flex-direction: column; align-items: stretch;">
+                <div style="flex: 1; position: relative; display: flex; align-items: center; justify-content: center; background: #000; min-height: 0;">
+                    <div class="lightbox-loader" id="lightbox-loader">
+                        <div class="spinner-ring"></div>
+                    </div>
+                    <video id="lightbox-video" controls autoplay playsinline src=""></video>
+                    <iframe id="lightbox-iframe" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" allowfullscreen sandbox="allow-scripts allow-same-origin allow-presentation allow-popups allow-forms" style="display: none; width: 100%; height: 100%; border: none;"></iframe>
+                </div>
+                <div class="lightbox-fullscreen-notice" style="background: #141414; border-top: 1px solid rgba(255, 255, 255, 0.15); padding: 15px; display: flex; align-items: center; justify-content: center; gap: 8px; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.22em; color: #ffffff; text-transform: uppercase; text-shadow: 0 0 10px rgba(255, 255, 255, 0.4); animation: pulse 2.5s infinite;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-maximize-2" style="color: #ffffff;"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg>
+                    <span>Tap fullscreen and enjoy the full experience.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <!-- Three.js Library via CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+    <!-- Lucide Icons Package via CDN -->
+    <script src="https://unpkg.com/lucide@latest" defer></script>
+    <!-- Custom Application JS -->
+    <script src="app.js" defer></script>
+</body>
+</html>

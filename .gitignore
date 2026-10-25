@@ -1,0 +1,13 @@
+# Local server & development scripts
+serve.ps1
+
+# Design source files (keep repo lightweight)
+*.psd
+
+# OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs & temp files
+*.log
