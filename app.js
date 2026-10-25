@@ -902,6 +902,24 @@ document.addEventListener('DOMContentLoaded', () => {
             if (visits.length > 100) visits = visits.slice(0, 100);
             localStorage.setItem('jesnow_portfolio_visits', JSON.stringify(visits));
 
+            // Send Instant Alert to Telegram via secure Vercel API
+            // Rate-limited to once per browser session so navigating pages won't spam
+            const sessionAlertKey = 'jesnow_telegram_alerted';
+            if (!sessionStorage.getItem(sessionAlertKey)) {
+                sessionStorage.setItem(sessionAlertKey, 'true');
+                fetch('/api/notify', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        client: visitRecord.client,
+                        page: visitRecord.page,
+                        referrer: visitRecord.referrer,
+                        device: visitRecord.device,
+                        resolution: visitRecord.resolution
+                    })
+                }).catch(() => {/* Silent fallback if offline */});
+            }
+
             // Expose console helper for Jesnow to view visits at any time
             window.getPortfolioVisits = () => {
                 console.table(JSON.parse(localStorage.getItem('jesnow_portfolio_visits') || '[]'));
