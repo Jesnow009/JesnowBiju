@@ -720,6 +720,19 @@ document.addEventListener('DOMContentLoaded', () => {
             formData.forEach((value, key) => {
                 jsonObject[key] = value;
             });
+
+            // Instant Telegram alert for new lead inquiry
+            fetch('/api/notify', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    isLead: true,
+                    name: jsonObject.name,
+                    email: jsonObject.email,
+                    phone: jsonObject.phone || 'Not provided',
+                    message: jsonObject.message
+                })
+            }).catch(() => {});
             
             fetch('https://api.web3forms.com/submit', {
                 method: 'POST',

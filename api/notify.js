@@ -20,14 +20,31 @@ export default async function handler(req, res) {
         const region = req.headers['x-vercel-ip-country-region'] || '';
         const country = req.headers['x-vercel-ip-country'] || body.country || 'India';
         
-        const clientTag = body.client || 'Direct / Organic';
-        const page = body.page || '/';
-        const referrer = body.referrer || 'Direct Link / Bio';
-        const device = body.device || 'Mobile / Desktop';
-        const resolution = body.resolution || 'N/A';
+        const isLead = body.isLead === true;
         const time = new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' });
 
-        const message = 
+        let message;
+        if (isLead) {
+            message = 
+`🔥 *NEW CLIENT INQUIRY RECEIVED!*
+━━━━━━━━━━━━━━━━━━
+👤 *Client Name:* ${body.name || 'Anonymous'}
+📧 *Email:* ${body.email || 'N/A'}
+📞 *Phone / WhatsApp:* ${body.phone || 'Not provided'}
+💬 *Project Details:*
+"${body.message || 'No details provided'}"
+📍 *Location:* ${city}${region ? ', ' + region : ''}, ${country}
+⏱️ *Time:* ${time} (IST)
+━━━━━━━━━━━━━━━━━━
+✉️ [Reply via Email](mailto:${body.email || ''})`;
+        } else {
+            const clientTag = body.client || 'Direct / Organic';
+            const page = body.page || '/';
+            const referrer = body.referrer || 'Direct Link / Bio';
+            const device = body.device || 'Mobile / Desktop';
+            const resolution = body.resolution || 'N/A';
+
+            message = 
 `🚨 *NEW PORTFOLIO VISITOR!*
 ━━━━━━━━━━━━━━━━━━
 🎯 *Target Client:* \`${clientTag}\`
@@ -38,6 +55,7 @@ export default async function handler(req, res) {
 ⏱️ *Time:* ${time} (IST)
 ━━━━━━━━━━━━━━━━━━
 🌐 [Open Live Site](https://jesnowbijuportfolio.vercel.app/)`;
+        }
 
         const botToken = '8749893348:AAEYI6xG49BWwZbzPPzcKp1DmhF0FYrrrwI';
         const chatId = '938770367';

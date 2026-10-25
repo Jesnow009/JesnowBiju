@@ -1551,6 +1551,82 @@ select.form-input option {
     transform: translateY(-2px);
 }
 
+/* FLOATING DIRECT WHATSAPP BADGE */
+.floating-whatsapp-pill {
+    position: fixed;
+    bottom: 2.2rem;
+    left: 2.2rem;
+    background: rgba(12, 10, 14, 0.88);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(37, 211, 102, 0.4);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 0.65rem 1.25rem;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 990;
+    text-decoration: none;
+    color: #ffffff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8), 0 0 20px rgba(37, 211, 102, 0.18);
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.floating-whatsapp-pill:hover {
+    border-color: #25d366;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.95), 0 0 30px rgba(37, 211, 102, 0.45);
+    transform: translateY(-3px) scale(1.03);
+}
+
+.whatsapp-icon-wrap {
+    color: #25d366;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.floating-whatsapp-pill:hover .whatsapp-icon-wrap {
+    transform: scale(1.1);
+}
+
+.whatsapp-pill-text {
+    font-family: var(--font-body);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.whatsapp-pill-dot {
+    width: 7px;
+    height: 7px;
+    background-color: #25d366;
+    border-radius: 50%;
+    box-shadow: 0 0 8px #25d366;
+    animation: pulseGreen 1.8s infinite;
+}
+
+@keyframes pulseGreen {
+    0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+    70% { transform: scale(1); box-shadow: 0 0 0 8px rgba(37, 211, 102, 0); }
+    100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+}
+
+@media (max-width: 576px) {
+    .floating-whatsapp-pill {
+        bottom: 1.5rem;
+        left: 1.5rem;
+        padding: 0.55rem 0.95rem;
+        gap: 8px;
+    }
+    .whatsapp-pill-text {
+        font-size: 0.65rem;
+    }
+}
+
 /* CINEMATIC SCROLL REVEAL ANIMATIONS */
 .scroll-reveal {
     opacity: 0;
